@@ -68,6 +68,56 @@ This project simulates a secure enterprise network using Cisco Packet Tracer. It
 
 Configured VLANs for HR, IT, Admin, and DMZ to logically segment the network and reduce unnecessary broadcast traffic.
 
+### Inter-VLAN Routing
+![Routing](screenshots/inter-vlan-routing.png)
+
+Enabled inter-VLAN communication using router subinterfaces, allowing controlled communication between different network segments.
+
+### ACL Implementation
+![ACL](screenshots/ACLconfig.png)
+
+Applied ACLs to restrict unauthorized access between departments, ensuring HR and IT cannot access Admin resources while maintaining necessary connectivity.
+
+### ACL Testing
+![ACL Test](screenshots/HRtoAdmin.png)
+
+HR to Admin is blocked.
+
+![ACL Test](screenshots/HRto.png)
+
+HR to IT is blocked.
+
+![ACL Test](screenshots/HRtoDMZ.png)
+
+HR to DMZ works.
+
+![ACL Test](screenshots/ITtoAdmin.png)
+
+IT to Admin is blocked.
+
+![ACL Test](screenshots/ITtoDMZ.png)
+
+IT to DMZ works.
+
+![ACL Test](screenshots/AdminTohr.png)
+
+Admin to HR doesn't work and shows "request time out" as ACLs are stateless.
+
+![ACL Test](screenshots/AdminToIT&DMZ.png)
+
+Admin to IT doesn't work and shows "request time out" as ACls are stateless.
+Admin to DMZ works.
+
+### NAT Configuration
+![NAT](screenshots/nat.png)
+
+Configured PAT to allow multiple internal devices to access external networks using a single public IP address.
+
+### DMZ & Public Access
+![DMZ](screenshots/dmz.png)
+
+Deployed a DMZ to host a public web server using static NAT, allowing external access while protecting internal network resources.
+
 ---
 
 ## Project Files
