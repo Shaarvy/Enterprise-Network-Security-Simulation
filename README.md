@@ -61,9 +61,12 @@ This project simulates a secure enterprise network using Cisco Packet Tracer. It
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-(Add your screenshots here)
+### VLAN Configuration
+![VLAN](screenshots/vlanConfig.png)
+
+Configured VLANs for HR, IT, Admin, and DMZ to logically segment the network and reduce unnecessary broadcast traffic.
 
 ---
 
